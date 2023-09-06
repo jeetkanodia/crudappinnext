@@ -1,10 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-const page = () => {
+const Page = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-
   const router = useRouter();
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -55,4 +54,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
