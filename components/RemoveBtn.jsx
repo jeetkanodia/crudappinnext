@@ -6,7 +6,7 @@ const RemoveBtn = ({ id }) => {
   const router = useRouter();
   const removeTopic = async () => {
     if (confirm("Remove Topic?")) {
-      await fetch(`http://localhost:3000/api/topics?id=${id}`, {
+      await fetch(`/api/topics?id=${id}`, {
         method: "DELETE",
       });
       router.refresh();
